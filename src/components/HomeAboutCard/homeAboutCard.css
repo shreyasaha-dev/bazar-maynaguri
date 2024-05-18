@@ -1,0 +1,27 @@
+.home-about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  padding: 40px;
+}
+.home-about-card > img {
+}
+.home-about-card > h1 {
+  font-weight: 400;
+  font-size: 23px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.home-about-card > p {
+  text-align: center;
+  font-size: 15px;
+  color: gray;
+}
+.home-about-card:nth-child(1) {
+  border-right: 1px solid #d9d9d9;
+}
+.home-about-card:nth-child(3) {
+  border-left: 1px solid #d9d9d9;
+}

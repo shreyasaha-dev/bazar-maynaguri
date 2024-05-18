@@ -1,0 +1,131 @@
+.search-whole-section {
+  padding: 15px 90px;
+}
+.breadcrums {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+}
+.breadcrums > a {
+  text-decoration: none;
+  font-size: 15px;
+  color: gray;
+}
+.breadcrums > span {
+  color: gray;
+  margin: 0 10px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.search-mid-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+.search-left-section {
+  width: 23%;
+  border-right: 1px solid lightgray;
+  /* padding-right: 20px; */
+}
+.search-left-section > h3 {
+  color: #fd7e14;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+.search > input {
+  width: 90%;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 17px;
+  border-radius: 5px;
+}
+.search > span {
+  font-size: 18px;
+  color: gray;
+}
+.search-left-section > p {
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 15px;
+}
+.search-left-section > select {
+  padding: 10px 15px;
+  border: 1px solid gray;
+  font-size: 17px;
+  border-radius: 5px;
+  width: 93%;
+  margin-right: 20px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.each-sub-category > label {
+  font-size: 16px;
+  color: rgb(78, 78, 78);
+}
+.search-left-section > h4 {
+  font-size: 17px;
+  margin-bottom: 30px;
+  color: rgb(83, 77, 77);
+}
+.search-left-section > button {
+  padding: 10px 25px;
+  background-color: #f82e2e;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.search-right-section {
+  width: 77%;
+  border-top: 1px solid lightgray;
+  margin-left: 20px;
+  padding-top: 15px;
+}
+.search-right-top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
+.search-right-top-section > p {
+  font-size: 18px;
+}
+.sort-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sort-by > p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.sort-by > select {
+  padding: 10px;
+  font-size: 15px;
+  color: rgb(78, 78, 78);
+  border: 1px solid lightgray;
+}
+.search-right-mid-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

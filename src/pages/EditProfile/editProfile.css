@@ -1,0 +1,232 @@
+.edit-profile-main-section {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.edit-profile-left-section {
+  width: 22%;
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px;
+  border-bottom: 1px solid #eaeaea;
+}
+.user-details > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-size: cover;
+}
+.user-details > p {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.rating-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+  margin-top: 5px;
+}
+.rating-text {
+  font-size: 14px;
+  color: black;
+}
+.profile-navigation-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1.5px solid #dddddd;
+}
+.profile-navigation-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.profile-navigation-option:hover {
+  background-color: #f82e2e;
+}
+.profile-navigation-option:hover .navigation-img {
+  filter: brightness(0%) invert(1);
+}
+.profile-navigation-option:hover .navigation-title {
+  color: white;
+}
+.navigation-option-details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+.navigation-title {
+  font-size: 15.5px;
+  color: #333333;
+  margin-left: 10px;
+}
+.navigation-count {
+  padding: 5px;
+  border-radius: 100%;
+  background-color: black;
+  color: #ffffff;
+  font-size: 12.5px;
+}
+.logout-section {
+  border-top: 1.5px solid #dddddd;
+  margin-top: 3px;
+}
+
+.edit-profile-right-section {
+  width: 78%;
+}
+.edit-profile-right-section > h2 {
+  font-size: 21px;
+  font-weight: 500;
+  color: black;
+  padding: 17px 35px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid lightgray;
+}
+.edit-profile-edit-main-section {
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit-profile-form {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 35px;
+  border-radius: 7px;
+  border: 1px solid #d0d0d0d0;
+  box-shadow: 0 0 20px #dddddd;
+}
+.input-division {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.label {
+  font-size: 15px;
+  width: 100%;
+  color: black;
+  margin-bottom: 8px;
+}
+.bold-label {
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  margin: 25px 0 16px;
+}
+.radio-button-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.radio-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+.radio-button > p {
+  font-size: 15px;
+  width: 100%;
+  color: black;
+  margin-left: 8px;
+}
+.checkbox-section > p {
+  font-size: 15px;
+  width: 100%;
+  color: black;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+.checkbox-button-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.checkbox-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+.checkbox-button > p {
+  font-size: 15px;
+  width: 100%;
+  color: black;
+}
+.profile-image-upload-section {
+  margin-top: 22px;
+}
+.upload-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.upload-section > div {
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-section > div:hover {
+  background-color: #f82e2e;
+}
+.upload-image-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background-size: cover;
+  margin-left: 27px;
+}
+.button-section {
+  width: 100%;
+  padding: 30px 15px 0;
+  border-top: 1px solid lightgray;
+  margin-top: 30px;
+}
+.button-section > button {
+  padding: 12px;
+  background-color: #f82e2e;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-section > button:hover {
+  background-color: #000000;
+}

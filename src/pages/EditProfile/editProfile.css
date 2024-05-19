@@ -3,6 +3,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  /* padding-top: 170px; */
 }
 .edit-profile-left-section {
   width: 22%;

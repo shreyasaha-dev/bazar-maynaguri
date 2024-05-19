@@ -1,14 +1,6 @@
 // import React from "react";
 // import { useDispatch } from "react-redux";
 // import { addToken } from "../../store/Reducers/userDataReducer";
-// import "@coreui/coreui-pro/dist/css/coreui.min.css";
-// // import "bootstrap/dist/css/bootstrap.min.css";
-// import {
-//   CCarousel,
-//   CCarouselCaption,
-//   CCarouselItem,
-//   CImage,
-// } from "@coreui/react-pro";
 // import "./home.css";
 // import HomeAboutCard from "../../components/HomeAboutCard";
 
@@ -123,9 +115,23 @@
 
 // export default Home;
 import React from "react";
-
+import { useDispatch, useSelector } from "react-redux";
+import { addToken } from "../../store/Reducers/userDataReducer";
 const Home = () => {
-  return <div>Home</div>;
+  const dispatch = useDispatch();
+
+  return (
+    <div>
+      Home
+      <button
+        onClick={() => {
+          dispatch(addToken(""));
+        }}
+      >
+        log out
+      </button>
+    </div>
+  );
 };
 
 export default Home;

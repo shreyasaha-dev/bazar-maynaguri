@@ -8,11 +8,13 @@ import Select from "react-select";
 import { Formik, ErrorMessage } from "formik";
 import * as yup from "yup";
 import axios from "axios";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import moment from "moment/moment";
+import { addToken } from "../../store/Reducers/userDataReducer";
+import { useNavigate } from "react-router-dom";
 const customStyles = {
   control: (provided, state) => ({
     ...provided,
@@ -63,45 +65,54 @@ const EditProfile = () => {
   ];
   const [languages, setLanguages] = useState([]);
   const [country, setCountry] = useState([]);
+  const dispatch = useDispatch();
   const userToken = useSelector((state) => state.userToken);
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const passwordRegex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}$/;
+  const navigate = useNavigate();
   const profileSidebarOptions = [
     {
       title: "Dashboard",
       img: require("../../images/dashboard.png"),
       count: 0,
+      navigate: "/",
     },
     {
       title: "Edit Profile",
       img: require("../../images/edit profile.png"),
       count: 0,
+      navigate: "",
     },
     {
       title: "My Order",
       img: require("../../images/my order.png"),
       count: 0,
+      navigate: "",
     },
     {
       title: "My Favorite",
       img: require("../../images/my favorite.png"),
       count: 0,
+      navigate: "",
     },
     {
       title: "Reviews",
       img: require("../../images/reviews.png"),
       count: 0,
+      navigate: "",
     },
     {
       title: "Messages",
       img: require("../../images/messages.png"),
       count: 10,
+      navigate: "",
     },
     {
       title: "Notifications",
       img: require("../../images/notifications.png"),
       count: 14,
+      navigate: "",
     },
   ];
   const submitProfile = async (values, resetForm) => {
@@ -285,7 +296,12 @@ const EditProfile = () => {
           <div className="profile-navigation-section">
             {profileSidebarOptions.map((option, index) => (
               <div className="profile-navigation-option" key={index}>
-                <div className="navigation-option-details">
+                <div
+                  className="navigation-option-details"
+                  onClick={() => {
+                    navigate(option.navigate);
+                  }}
+                >
                   <img
                     src={option.img}
                     alt="navigation"
@@ -301,7 +317,12 @@ const EditProfile = () => {
           </div>
           <div className="logout-section">
             <div className="profile-navigation-option">
-              <div className="navigation-option-details">
+              <div
+                className="navigation-option-details"
+                onClick={() => {
+                  dispatch(addToken(""));
+                }}
+              >
                 <img
                   src={require("../../images/logout.png")}
                   alt="logout"

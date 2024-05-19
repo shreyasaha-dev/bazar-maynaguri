@@ -1,8 +1,10 @@
-/* .total-nav {
-  position: fixed;
-  width: 100%;
+.total-nav {
+  position: sticky;
   top: 0;
-} */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
 .nav-top-section {
   display: flex;
   justify-content: center;
@@ -75,6 +77,16 @@
   align-items: center;
   padding: 0 70px;
   background-color: #f82e2e;
+}
+.logout {
+  border: none;
+  outline: none;
+  background-color: #f82e2e;
+  color: white;
+  cursor: pointer;
+}
+.logout:hover {
+  background-color: #012347;
 }
 .each-link {
   padding: 13px;
